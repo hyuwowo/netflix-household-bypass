@@ -82,7 +82,7 @@ This extension is designed to be installed manually in your browser. Follow thes
 #### 🌐 Google Chrome / Microsoft Edge / Brave / Opera
 1. Open your browser and go to: `chrome://extensions/` (or `edge://extensions/` for Edge).
 2. Turn on **Developer mode** using the toggle switch in the top-right corner.
-3. Click the **"Load unpacked"** (Muat ekstensi yang belum dikemas) button in the top-left corner.
+3. Click the **"Load unpacked"** button in the top-left corner.
 4. Select the extracted `netflix-household-bypass` folder (the directory containing `manifest.json`).
 5. **Done!** The extension is now active. You can pin the icon to your toolbar.
 
