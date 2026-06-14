@@ -66,27 +66,31 @@ Netflix enforces a **household verification** system that forces all account mem
 
 ---
 
-## 📥 Installation
+## 📥 Easy Installation Guide
 
-### Chrome / Edge / Brave / Opera / Vivaldi
+This extension is designed to be installed manually in your browser. Follow these simple steps:
 
-1. **Download** this repository → "Code" → "Download ZIP" or:
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/netflix-household-bypass.git
-   ```
-2. Go to `chrome://extensions/`
-3. Enable **Developer Mode** (top right)
-4. Click **"Load unpacked"**
-5. Select the `netflix-household-bypass` folder
-6. Done! The icon appears in your toolbar ✅
+### 1. Download the Extension
+* Go to the **[Releases](https://github.com/hyuwowo/netflix-household-bypass/releases)** page of this repository.
+* Under the latest version, click and download **`netflix-household-bypass.zip`** (or click the green **Code** button at the top of this page and choose **Download ZIP**).
+* **Extract/Unzip** the downloaded `.zip` file into a folder on your computer.
 
-### Mozilla Firefox
+---
 
-1. **Download** this repository
-2. Go to `about:debugging#/runtime/this-firefox`
-3. Click **"Load Temporary Add-on..."**
-4. Select the `manifest-firefox.json` file
-5. Done! ✅
+### 2. Load it into Your Browser
+
+#### 🌐 Google Chrome / Microsoft Edge / Brave / Opera
+1. Open your browser and go to: `chrome://extensions/` (or `edge://extensions/` for Edge).
+2. Turn on **Developer mode** using the toggle switch in the top-right corner.
+3. Click the **"Load unpacked"** (Muat ekstensi yang belum dikemas) button in the top-left corner.
+4. Select the extracted `netflix-household-bypass` folder (the directory containing `manifest.json`).
+5. **Done!** The extension is now active. You can pin the icon to your toolbar.
+
+#### 🦊 Mozilla Firefox
+1. Open Firefox and go to: `about:debugging#/runtime/this-firefox`
+2. Click the **"Load Temporary Add-on..."** button.
+3. Open the extracted folder and select **`manifest-firefox.json`**.
+4. **Done!** The extension is active for this session.
 
 ---
 
@@ -124,7 +128,7 @@ netflix-household-bypass/
 ├── styles.css             # Early CSS to hide restriction modals
 ├── popup.html / css / js  # Extension popup UI
 ├── icons/                 # Extension icons (16–128px)
-└── LICENSE                # MIT
+└── LICENSE                # Free & Non-Commercial
 ```
 
 ---
