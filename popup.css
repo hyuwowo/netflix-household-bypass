@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: transparent !important;
+}
+
+body {
+    width: 300px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: transparent !important;
+    color: #1a1a1a;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 18px 16px 14px;
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* === Header === */
+.header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 2px;
+}
+
+.logo {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 6px rgba(0, 120, 255, 0.25));
+}
+
+.title {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    color: #111;
+    line-height: 1.2;
+}
+
+.subtitle {
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 400;
+    margin-top: 2px;
+}
+
+/* === Glass Panel === */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 14px;
+    padding: 12px 14px;
+    box-shadow:
+        0 2px 12px rgba(0, 0, 0, 0.04),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+/* === Status === */
+.status-panel {
+    background: rgba(52, 199, 89, 0.06);
+    border-color: rgba(52, 199, 89, 0.15);
+}
+
+.status-row {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 6px;
+}
+
+.pulse-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #34c759;
+    box-shadow: 0 0 5px rgba(52, 199, 89, 0.5);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.4); }
+}
+
+.status-text {
+    font-size: 12.5px;
+    font-weight: 600;
+    color: #2da44e;
+}
+
+.desc {
+    font-size: 11px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.45);
+    font-weight: 400;
+}
+
+/* === Features === */
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 14px;
+    transition: background 0.15s ease;
+}
+
+.feature:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.feature:hover {
+    background: rgba(0, 0, 0, 0.02);
+}
+
+.feature-icon {
+    font-size: 13px;
+    width: 18px;
+    text-align: center;
+}
+
+.feature-label {
+    flex: 1;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.feature-badge {
+    font-size: 9px;
+    font-weight: 700;
+    color: #34c759;
+    background: rgba(52, 199, 89, 0.1);
+    padding: 2px 7px;
+    border-radius: 100px;
+    letter-spacing: 0.6px;
+}
+
+/* === Footer === */
+footer {
+    text-align: center;
+    font-size: 9.5px;
+    color: rgba(0, 0, 0, 0.2);
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    padding-top: 2px;
+}
